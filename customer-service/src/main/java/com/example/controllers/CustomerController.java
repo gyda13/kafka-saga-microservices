@@ -10,6 +10,7 @@ import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Post;
 
 @Controller
+
 public class CustomerController {
 
 
@@ -19,7 +20,7 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @Post
+    @Post("createCustomer")
     public HttpResponse<CreateCustomerResponse> createCustomer(@Body CreateCustomerRequest createCustomerRequest)
     {
         return HttpResponse.ok (this.customerService.createCustomer(createCustomerRequest));

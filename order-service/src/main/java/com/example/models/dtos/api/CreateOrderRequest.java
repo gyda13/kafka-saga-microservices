@@ -18,27 +18,5 @@ public class CreateOrderRequest {
     private String customerId;
     private List<CreateOrderItem> orderItems;
 
-    public String getResturantId() {
-        return resturantId;
-    }
 
-    public void setResturantId(String resturantId) {
-        this.resturantId = resturantId;
-    }
-
-    public String getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
-    }
-
-    public List<CreateOrderItem> getOrderItems() {
-        return orderItems;
-    }
-
-    public void setOrderItems(List<CreateOrderItem> orderItems) {
-        this.orderItems = orderItems;
-    }
 }
